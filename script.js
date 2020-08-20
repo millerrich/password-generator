@@ -7,7 +7,7 @@ function writePassword() {
     var passLength = prompt("How many characters would you like in your password? Choose any number from 8 to 128.");
       console.log("password length: " + passLength);
     
-    
+    var charType = [];
 
   
   
