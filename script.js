@@ -48,29 +48,32 @@ function passParam() {
 }  
 
 function charParam () {
+  var validChar = [];
   var lowerCase = confirm("Include lowercase letters?");
     if (lowerCase) {
-      var validChar = low.concat(validChar);
+      validChar = validChar.concat(low);
     }
   var upperCase = confirm("Include upper case letters?");
     if (upperCase) {
-      var validChar = cap.concat(validChar);
+      validChar = validChar.concat(cap);
     }
   var specChar = confirm("Include special characters?");
     if (specChar) {
-      var validChar = spec.concat(validChar);
+      validChar = validChar.concat(spec);
     }
   var numbers = confirm("Include numbers?");
     if (numbers) {
-      var validChar = num.concat(validChar);
+      validChar = validChar.concat(num);
     }
     
     //array including all characters which password is to be generated from
-      console.log(validChar);
+    console.log(validChar);
+
 }
 
 function generatePassword() {
-
+   var password = validChar[Math.floor(Math.random() * validChar.length)];
+  console.log(password);
 } 
 
 
