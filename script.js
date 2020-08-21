@@ -50,23 +50,23 @@ function passParam() {
 function charParam () {
   var lowerCase = confirm("Include lowercase letters?");
     if (lowerCase) {
-      low.concat(validChar);
+      var validChar = low.concat(validChar);
     }
   var upperCase = confirm("Include upper case letters?");
     if (upperCase) {
-      cap.concat(validChar);
+      var validChar = cap.concat(validChar);
     }
   var specChar = confirm("Include special characters?");
     if (specChar) {
-      spec.concat(validChar);
+      var validChar = spec.concat(validChar);
     }
   var numbers = confirm("Include numbers?");
     if (numbers) {
-      num.concat(validChar);
+      var validChar = num.concat(validChar);
     }
+    
     //array including all characters which password is to be generated from
-    var validChar = [];  
-    console.log(validChar);
+      console.log(validChar);
 }
 
 function generatePassword() {
