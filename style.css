@@ -147,10 +147,26 @@ button[disabled] {
   #password {
     font-size: 1rem;
   }
+
+  h1 {
+    display: none;
+  }
+
+  .wrapper {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+  
+  h1 {
+    display: none;
+  }
+
+  .wrapper {
+    overflow: auto;
   }
 }
