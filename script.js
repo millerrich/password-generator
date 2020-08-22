@@ -16,7 +16,9 @@ console.log(spec);
 var allNumbers = "0123456789"
 var num = allNumbers.split("");
 console.log(num);
+
 var validChar = [];
+
 var passLength = 0;
 
 // Write password to the #password input
@@ -28,7 +30,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+  
 }
 
 // function has user input number >= 8 or <= 128
@@ -79,6 +81,7 @@ function generatePassword() {
     passFin += random;
   }
   return passFin;
+  
 }
 
 
