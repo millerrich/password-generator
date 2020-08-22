@@ -12,12 +12,30 @@ body,
   padding: 0;
 }
 
+@font-face {
+  font-family: fascinate;
+  src: url(fonts/Fascinate-Regular.ttf);
+}
+
+h1 {
+  font-family: fascinate;
+  font-size: 80px;
+  text-shadow: 5px 1px green;
+}
+
+h2 {
+  font-family: fascinate;
+  font-size: 50px;
+  text-shadow: 3px 1px black;
+}
+
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
 .wrapper {
+  background-image: url(https://media.giphy.com/media/9WC8WTZsFxkRi/giphy.gif);
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -31,11 +49,12 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
+  background-image: url(https://i.pinimg.com/originals/61/f0/de/61f0de8e63452614dcdc7c6aac3fa2ee.gif);
+  border: double 15px green;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: green;
+  text-align: center;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -46,7 +65,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: green;
   height: 2px;
 }
 
@@ -62,7 +81,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: green;
   height: 2px;
 }
 
@@ -73,12 +92,10 @@ header {
 }
 
 .btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
+  border: double 8px green;
+  background-color: black;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  color: green;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -108,14 +125,16 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 20px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 5px double green;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  background-color: black;
+  color: green;
 }
 
 @media (max-width: 690px) {
