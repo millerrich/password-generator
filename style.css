@@ -3,6 +3,19 @@
 *::after {
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+ width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: black;
+  box-shadow: inset 0 0 4px green;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px black;
+}
 
 html,
 body,
@@ -145,7 +158,7 @@ button[disabled] {
   }
 
   #password {
-    font-size: 1rem;
+    overflow: auto;
   }
 
   h1 {
